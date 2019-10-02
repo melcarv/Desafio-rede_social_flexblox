@@ -28,7 +28,7 @@ body {
     
 }
 
-.foto_user {
+.user {
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -43,15 +43,16 @@ body {
 }
 
 .foto {
+    display: flex;
+    justify-content: flex-start;
     width: 100%;
+    max-width: 150px;
+    margin: 0 auto;
 }
 
 .icon {
     width: 30px;
-}
-
-.twitter {
-    margin: 0 5px;
+    padding: 2px;
 }
 
 .post {
@@ -64,4 +65,27 @@ body {
     border: none;
     text-transform: uppercase;
     padding: 10px 20px;
+}
+
+@media only screen and (max-width: 980px) {
+
+    .card {
+        width: 100%;
+    }
+
+    .usuarios {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .user {
+        width: 100%;
+    }
 }
